@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+
+article{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 15px;
+    
+}
+
+.question{
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    height: 160px;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid;
+    
+    
+}
+
+input{
+    margin-left: 25px;
+
+}
+
+p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+button{
+    margin-left: 45%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s; 
+}
+
+/* Estilo del botón al pasar el mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del botón al presionarlo */
+button:active {
+    transform: scale(0.95); /* Reducir ligeramente el tamaño */
+}
+
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+/* Estilos para el cronómetro */
+#cronometro {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#minutos, #segundos {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* fonndo animado */
+.gradient {
+	width: 100vw;
+	height: 110vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

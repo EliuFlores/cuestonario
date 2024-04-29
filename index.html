@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cuestionario.css">
+    
+
+</head>
+<body>
+    <div id="cronometro">Tiempo restante: <span id="minutos">05</span>:
+        <span id="segundos">00</span></div>
+    <header class="contenedor1">
+        <article id="encuesta">
+            <div class="gradient" >
+                <div class="question">
+                    <p>Pregunta 1: ¿cual eas la moneda oficial de Japon?</p>
+                    <input type="radio" name="pregunta1" value="20"> Yen <br>
+                    <input type="radio" name="pregunta1" value="0"> Yuan <br>
+                    <input type="radio" name="pregunta1" value="0"> Dolar <br> 
+                    <input type="radio" name="pregunta1" value="0"> Euro <br>
+                </div>
+                <div class="question">
+                    <p>Pregunta 2: ¿Quien pinto "LA noche estrellada?</p>
+
+                        <input type="radio" name="pregunta2" value=""> Leonardo da Vinci  <br>
+                        <input type="radio" name="pregunta2" value="0"> Pablo picasso <br>
+                        <input type="radio" name="pregunta2" value="20"> Vincent van Gogh <br>
+                        <input type="radio" name="pregunta2" value="0"> Claude Monet <br>
+                   
+                </div>
+                <div >
+                    <div class="question">
+                        <p>Pregunta 3: ¿En que año llego Cristobal Colon a America?</p>
+                        <input type="radio" name="pregunta3" value="0"> 1501 <br>
+                        <input type="radio" name="pregunta3" value="20"> 1492 <br>
+                        <input type="radio" name="pregunta3" value="0"> 1521 <br>
+                        <input type="radio" name="pregunta3" value="0"> 1620 <br>
+                    </div>
+                    <div >
+                        <div class="question">
+                            <p>Pregunta 4: ¿Quien escribio "Romeo y Julieta?</p>
+                            <input type="radio" name="pregunta4" value="0"> Miguel de Cervantes <br>
+                            <input type="radio" name="pregunta4" value="0"> Jane Austen <br>
+                            <input type="radio" name="pregunta4" value="0"> Charles Dickens <br>
+                            <input type="radio" name="pregunta4" value="20"> William Shakespeare <br>
+                        </div>
+                          <div >
+                <div class="question">
+                    <p>Pregunta 5: ¿Cual es el unico metal que permanece liquido a temperatura ambiental?</p>
+                    <input type="radio" name="pregunta5" value="0"> Estaño <br>
+                    <input type="radio" name="pregunta5" value="0"> Plomo <br>
+                    <input type="radio" name="pregunta5" value="20"> Mercurio <br>
+                    <input type="radio" name="pregunta5" value="0"> Zinc <br>
+                </div>
+                <button id="terminar-encuesta">Terminar Encuesta</button>
+            </div>
+            
+            <div id="popup" class="popup-container">
+                <span class="popup-close" id="popup-close">X</span>
+                <div class="popup-content" id="popup-content">
+                    <p id="puntajeTexto"></p>
+                </div>
+            </div>
+        </article>
+    </header>
+    <script src="cuestionario.js"></script>
+</body>
+</html>
